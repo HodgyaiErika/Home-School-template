@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="body-size">
+<head>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Link-uri pentru incarcarea celor 2 fonturi - Poppins si Font Awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <!-- .................... --> 
+  
+  <title>HomeSchool Sign up</title>
+
+</head>
+<body class="bodyfont body-size"> 
+	<div class="signup-container">
+		<div class="signup-text-container">
+			<div class="font40 bold">Learn new skills from the comfort of your home</div>
+			<div class="font18 signup-subtitle-distance">Learning never stops, but why invest more time than needed. Learn all the skills you need from the comfort of your own home without any worries.</div>
+		</div>
+		<div>
+			<div class="tryit-container">
+				<span class="bold">Try it free for 7 days</span> <span>then choose any of plans thereafter</span>
+			</div>
+			<div class="signup-form-container">
+				<form class="input-button-size">
+					<input type="text" class="input-style" id="firstname" placeholder="First Name"><br>
+					<div class="exclamation-style" id="firstnameerror">
+						<i class="fa fa-exclamation-circle"> This field is mandatory</i>
+					</div>
+					<input type="text" class="input-style" id="lastname" placeholder="Last Name">
+					<div class="exclamation-style" id="lastnameerror">
+						<i class="fa fa-exclamation-circle"> This field is mandatory</i>
+					</div>
+					<input type="text" class="input-style" id="username" placeholder="Username"><br>
+					<div class="exclamation-style" id="usernameerror">
+						<i class="fa fa-exclamation-circle"> This field is mandatory</i>
+					</div>
+					<input type="text" class="input-style" id="password" placeholder="Password">
+					<div class="exclamation-style" id="passworderror">
+						<i class="fa fa-exclamation-circle"> This field is mandatory</i>
+					</div>
+				</form>
+				<div class="input-button-size">
+					<button onclick="signupvalidation()" class="login-signup-button">Sign Up</button>
+				</div>
+				<div class="terms-services">
+					<span>By clicking the button you are agreeing to our</span> <a href="index.html" class="red-color bold">Terms and services</a>
+				</div>
+			</div>
+			<div class="account-container">
+				<div class="account-question">Already have an account?</div>
+				<a href="login.html" class="font18 red-color">Sign in here!</a>
+			</div>
+		</div>
+	</div>		
+	
+  <script src="./js/javascript.js"> </script>   <!-- Incarcam fiesierul de JS --> 
+
+</body>
+
+</html>
