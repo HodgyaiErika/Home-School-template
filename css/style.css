@@ -1,16 +1,6 @@
 .bodyfont{
 	font-family:Poppins,font-awesome;
 }
-@media only screen and (max-width: 500px) {
-  /* For mobile phones: */
-	.title-container, .card,.textandrates-container,.testimonial-card-container{
-		width:100%;
-  }
-	.card-container,.textandrates-container,.testimonial-card-container{
-		flex-direction:column;
-		align-items:center;
-	}
-}
 /*Header*/
 .header-container{
 	width:100%;
@@ -77,6 +67,14 @@ a {
 }
 .signup-distance{
 	padding:15px;
+}
+.hamburger{
+	font-size:20px;
+	background-color:transparent;
+	border:0;
+	color:hsl(257, 27%, 26%);
+	cursor:pointer;
+	display:none;
 }
 /*Hero part*/
 .hero-container{
@@ -590,7 +588,7 @@ button:hover{
 	background-color:hsl(257, 27%, 26%);
 	padding:50px;
 	background-image:url('../images/bg-intro-desktop.png');
-	height:100%;
+	align-items:stretch;
 	background-size:cover;
 	background-position:center;
 	display:flex;
@@ -605,7 +603,7 @@ button:hover{
 	text-align:left;
 	line-height:1.5;
 	color:white;
-	padding:100px 0 0 0 ;
+	padding:150px 0 0 0 ;
 }
 .font40{
 	font-size:40px;
@@ -638,6 +636,95 @@ button:hover{
 	padding:15px 0;
 	margin:0 0 15px 0;
 	font-size:12px;
+}
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+  /*Index part*/
+	.link-top-distance,.loginandsignup-container{
+		display:none;
+	}
+	.hamburger{
+		display:block;
+	}
+	.hero-container{
+		padding:30px 15px 100px 15px;
+		background-image:none;
+	}
+	.title-subtitle-container{
+		width:100%;
+	}
+	.image-container{
+		width:100%;
+		padding:50px;
+		order:-1;
+	}
+	.image-size{
+		width:400px;
+	}
+	.hero-title{
+		font-size:30px;
+		color:hsl(257, 27%, 26%);
+		font-weight:bold;
+		padding:25px 0 0 0;
+		width:15ch;
+		text-align:center;
+		margin:auto;
+	}
+	.hero-subtitle{
+		color: hsl(0, 0%, 75%);
+		font-size:15px;
+		padding:15px 0 0 0;
+		width:52ch;
+		text-align:center;
+		margin:auto;
+	}
+	.title-container, .card,.textandrates-container,.testimonial-card-container{
+		width:100%;
+  }
+	.card-container,.textandrates-container,.testimonial-card-container,.hero-container,.price-card-container,.signup-container{
+		flex-direction:column;
+		align-items:center;
+	}
+	.countdown-container{
+		width:300px;
+	}
+	.button-container{
+		width:250px;
+	}
+	.card-faq{
+		width:400px;
+	}
+	.faq-image{
+		top:0;
+		left:50%;
+	}
+	.container-faq{
+		margin:150px 0 50px 0;
+	}
+	.text-faq{
+		margin:100px 0 0 0;
+	}
+	.getstarted2-text{
+		font-size:32px;
+		text-align:center;
+	}
+	.footer-container{
+		padding:25px;
+		flex-direction:column;
+		align-items:center;
+	}
+	.footer-logo{
+		font-size:30px;
+		padding:0 0 10px 0;
+	}
+	/*Sign up part*/
+	.signup-container{
+		padding:50px 15px 70px 15px;
+	}
+	.signup-text-container{
+		width:350px;
+		text-align:center;
+	}
 }
 
 
