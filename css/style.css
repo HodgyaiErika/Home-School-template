@@ -76,6 +76,32 @@ a {
 	cursor:pointer;
 	display:none;
 }
+.hamburgerlinks-container{
+	display:none;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	background-color:hsl(257, 27%, 26%);
+	width:350px;
+	height:400px;
+	padding:25px;
+	margin:25px 0 0 0;
+	border-radius:10px;
+	position:sticky;
+	top:0;
+	left:80px;
+	z-index:2;
+}
+.hamburgerlinks-container a{
+	color:white;
+	padding:20px;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer;
+}
+.hamburgerlinks-container hr{
+	width:100%;
+}
 /*Hero part*/
 .hero-container{
 	display:flex;

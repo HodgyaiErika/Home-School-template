@@ -1,3 +1,11 @@
+/*Hamburger Links*/
+function hamburgerLinks(){
+	if (document.getElementById('hamburgerlink').style.display==='none'){
+		document.getElementById('hamburgerlink').style.display='flex';
+	} else {
+		document.getElementById('hamburgerlink').style.display='none';
+	}
+}
 /*Countdown Part*/
 function countdown(){
 	let countDate= new Date('December 31, 2021 00:00:00').getTime();
