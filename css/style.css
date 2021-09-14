@@ -441,7 +441,7 @@ button:hover{
 	color:white;
 	padding:20px 0 10px 0;
 }
-.answer-faq{
+.answerfaq{
 	font-size:12px;
 	color:white;
 	max-width:90%;
@@ -456,6 +456,9 @@ button:hover{
 .arrow-image{
 	padding:20px 0 10px 0;
 	cursor:pointer;
+}
+.rotatearrow{
+	transform:rotate(180deg);
 }
 /*Get Started 2*/
 .getstarted-container2{

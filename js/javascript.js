@@ -52,60 +52,23 @@ function monthly(){
 	anuallyButton.style.border='1px solid hsl(257, 27%, 26%)';
 }
 /*FAQ-Part*/
-function firstarrow(){
-	if (document.getElementById('expandanswer').style.display==='none'){
-		document.getElementById('boldquestion').style.fontWeight='bold';
-		document.querySelector('#rotatearrow').style.transform='rotate(180deg)';
-		document.getElementById('expandanswer').style.display='block';
-} else {
-	document.getElementById('boldquestion').style.fontWeight='normal';
-	document.querySelector('#rotatearrow').style.transform='rotate(0deg)';
-	document.getElementById('expandanswer').style.display='none'
-}
-}
-function secondarrow(){
-	if (document.getElementById('secondexpandanswer').style.display==='none'){
-		document.getElementById('secondboldquestion').style.fontWeight='bold';
-		document.querySelector('#secondrotatearrow').style.transform='rotate(180deg)';
-		document.getElementById('secondexpandanswer').style.display='block';
-} else {
-	document.getElementById('secondboldquestion').style.fontWeight='normal';
-	document.querySelector('#secondrotatearrow').style.transform='rotate(0deg)';
-	document.getElementById('secondexpandanswer').style.display='none'
-}
-}
-function thirdarrow(){
-	if (document.getElementById('thirdexpandanswer').style.display==='none'){
-		document.getElementById('thirdboldquestion').style.fontWeight='bold';
-		document.querySelector('#thirdrotatearrow').style.transform='rotate(180deg)';
-		document.getElementById('thirdexpandanswer').style.display='block';
-} else {
-	document.getElementById('thirdboldquestion').style.fontWeight='normal';
-	document.querySelector('#thirdrotatearrow').style.transform='rotate(0deg)';
-	document.getElementById('thirdexpandanswer').style.display='none'
-}
-}
-function fortharrow(){
-	if (document.getElementById('forthexpandanswer').style.display==='none'){
-		document.getElementById('forthboldquestion').style.fontWeight='bold';
-		document.querySelector('#forthrotatearrow').style.transform='rotate(180deg)';
-		document.getElementById('forthexpandanswer').style.display='block';
-} else {
-	document.getElementById('forthboldquestion').style.fontWeight='normal';
-	document.querySelector('#forthrotatearrow').style.transform='rotate(0deg)';
-	document.getElementById('forthexpandanswer').style.display='none'
-}
-}
-function fiftharrow(){
-	if (document.getElementById('fifthexpandanswer').style.display==='none'){
-		document.getElementById('fifthboldquestion').style.fontWeight='bold';
-		document.querySelector('#fifthrotatearrow').style.transform='rotate(180deg)';
-		document.getElementById('fifthexpandanswer').style.display='block';
-} else {
-	document.getElementById('fifthboldquestion').style.fontWeight='normal';
-	document.querySelector('#fifthrotatearrow').style.transform='rotate(0deg)';
-	document.getElementById('fifthexpandanswer').style.display='none'
-}
+let accordion = document.getElementsByClassName("question-arrow-distance");
+let i;
+
+for (i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function(event) {
+    /* Toggle between adding and removing the "bold" class*/
+    this.classList.toggle("bold");
+	/*Rotate arrow*/
+	event.currentTarget.querySelector('.arrow-image').classList.toggle("rotatearrow")
+    /* Toggle between hiding and showing the active panel */
+    let answerfaq = this.nextElementSibling;
+    if (answerfaq.style.display === "block") {
+      answerfaq.style.display = "none";
+    } else {
+      answerfaq.style.display = "block";
+    }
+  });
 }
 /*Login Part*/
 function loginvalidation(){
